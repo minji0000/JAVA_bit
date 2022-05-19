@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bitcamp_minji/Bitcamp_minji.iml" filepath="$PROJECT_DIR$/Bitcamp_minji/Bitcamp_minji.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects.iml" filepath="$PROJECT_DIR$/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lol_may_19/lol_may_19.iml" filepath="$PROJECT_DIR$/lol_may_19/lol_may_19.iml" />
+    </modules>
+  </component>
+</project>

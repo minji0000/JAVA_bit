@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea86bd87-d731-43a0-b562-1f3151c968af" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/BitCamp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/annotations-13.0-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/annotations-13.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/annotations-13.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/apiguardian-api-1.1.0-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/apiguardian-api-1.1.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/apiguardian-api-1.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-jupiter-api-5.6.0-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-jupiter-api-5.6.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-jupiter-api-5.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-jupiter-engine-5.6.0-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-jupiter-engine-5.6.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-jupiter-engine-5.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-platform-commons-1.6.0-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-platform-commons-1.6.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-platform-commons-1.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-platform-engine-1.6.0-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-platform-engine-1.6.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/junit-platform-engine-1.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-stdlib-1.5.10-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-stdlib-1.5.10-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-stdlib-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-stdlib-common-1.5.10-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-stdlib-common-1.5.10-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-stdlib-common-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-test-1.5.10-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-test-1.5.10-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-test-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-test-junit5-1.5.10-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-test-junit5-1.5.10-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/kotlin-test-junit5-1.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/opentest4j-1.2.0-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/opentest4j-1.2.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/libs/opentest4j-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BitCamp/src/main/kotlin/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/Bitcamp_minji.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/out/production/Bitcamp_minji/bitcamp_may_19/animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/out/production/Bitcamp_minji/bitcamp_may_19/birdSeries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/out/production/Bitcamp_minji/bitcamp_may_19/fishSeries.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/out/production/Bitcamp_minji/bitcamp_may_19/play_animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/out/production/Bitcamp_minji/com/kari/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/src/bitcamp_may_19/animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/src/bitcamp_may_19/birdSeries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/src/bitcamp_may_19/fishSeries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/src/bitcamp_may_19/play_animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bitcamp_minji/src/com/kari/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lol_may_19/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lol_may_19/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lol_may_19/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lol_may_19/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lol_may_19/lol_may_19.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lol_may_19/out/production/lol_may_19/lol/dealer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lol_may_19/out/production/lol_may_19/lol/garen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lol_may_19/out/production/lol_may_19/lol/play.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lol_may_19/out/production/lol_may_19/lol/tanker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lol_may_19/src/lol" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="29NPMgLQwjrHvLW5lH4QL7l1Few" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea86bd87-d731-43a0-b562-1f3151c968af" name="Changes" comment="" />
+      <created>1652950524855</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652950524855</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
