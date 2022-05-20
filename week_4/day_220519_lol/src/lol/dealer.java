@@ -1,7 +1,5 @@
 package lol;
 
-import java.sql.SQLOutput;
-
 public class dealer extends garen {
 
     String sword;
@@ -62,20 +60,6 @@ public class dealer extends garen {
     public void putPower ( ) {
         System.out.println("내 공격력은 " + power + "이다!!");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

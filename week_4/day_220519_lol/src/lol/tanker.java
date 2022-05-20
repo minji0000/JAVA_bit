@@ -54,5 +54,4 @@ public class tanker extends garen {
         System.out.println("내 방어력은 " + defense + "이야!");
     }
 
-
 }
