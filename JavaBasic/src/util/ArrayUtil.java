@@ -111,6 +111,10 @@ public class ArrayUtil {
     }
 
 
+
+
+
+
     // 2. String[]
     // A. size()
     public static int size(String[] arr) {
@@ -126,6 +130,10 @@ public class ArrayUtil {
     public static String get(String[] arr, int index) {
         return arr[index];
     }
+
+
+
+
 
     public static boolean contains(String[] arr, String e) {
         for (int i = 0; i < size(arr); i++) {
@@ -221,6 +229,8 @@ public class ArrayUtil {
     public static Student get(Student[] arr, int index) {
         return arr[index];
     }
+
+
 
     public static boolean equals(Student s1, Student s2) {
         return s1.id == s2.id;
