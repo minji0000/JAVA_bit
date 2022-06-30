@@ -4,7 +4,6 @@ import connector.DBConnector;
 import model.UserDTO;
 
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
@@ -19,12 +18,12 @@ public class UserController {
     }
 
     // 1. 로그인
-    public UserDTO logIn(int id, String password) {
-        String query = "SELECT * FROM `user` WHERE `id` = ? AND `password` = ?";
+    public UserDTO logIn(String username, String password) {
+        String query = "SELECT * FROM `user` WHERE `username` = ? AND `password` = ?";
 
         try {
             PreparedStatement pstmt = conn.prepareStatement(query);
-            pstmt.setInt(1, id);
+            pstmt.setString(1, username);
             pstmt.setString(2, convertTosha(password));
 
             ResultSet rs = pstmt.executeQuery();
@@ -33,6 +32,7 @@ public class UserController {
                 UserDTO u = new UserDTO();
                 u.setId(rs.getInt("id"));
                 u.setName(rs.getString("name"));
+                u.setUsername(rs.getString("username"));
                 u.setPassword(rs.getString("password"));
                 u.setLevel(rs.getInt("level"));
 
@@ -44,13 +44,13 @@ public class UserController {
         }
 
         return null;
-
     }
 
 
 
-    // 비밀번호 암호화해서 저장
 
+
+    // 비밀번호 암호화해서 저장
     private String convertTosha(String password) {
         String converted = null;
         StringBuilder builder = null;
@@ -76,4 +76,22 @@ public class UserController {
 
     }
 
+    public boolean register(UserDTO u) {
+        String query = "INSERT INTO `user`(`name`,`username`,`password`, `level`) VALUES(?, ?, ?, 1)";
+
+        try {
+            PreparedStatement pstmt = conn.prepareStatement(query);
+            pstmt.setString(1, u.getName());
+            pstmt.setString(2, u.getUsername());
+            pstmt.setString(3, convertTosha(u.getPassword()));
+
+            pstmt.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+    }
 }
