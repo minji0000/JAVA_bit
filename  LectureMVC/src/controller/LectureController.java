@@ -15,6 +15,7 @@ public class LectureController {
         conn = connector.makeConnection();
     }
 
+    // 등록된 강의 다 보여주는 메소드
     public ArrayList<LectureDTO> selectAll() {
 
         ArrayList<LectureDTO> list = new ArrayList<>();
@@ -114,6 +115,41 @@ public class LectureController {
         }
         return l;
     }
+
+    // 교수님이 수업하는 강의만 보여주는 메소드
+    public ArrayList<LectureDTO> selectProLecture(int userId) {
+        ArrayList<LectureDTO> list = new ArrayList<>();
+        String query = "SELECT * FROM `lecture` WHERE `professorId` = ?";
+
+        try {
+            PreparedStatement pstmt = conn.prepareStatement(query);
+            pstmt.setInt(1, userId);
+
+            ResultSet rs = pstmt.executeQuery();
+
+            while(rs.next()) {
+                LectureDTO l = new LectureDTO();
+                l = new LectureDTO();
+                l.setId((rs.getInt("id")));
+                l.setClassname(rs.getString("classname"));
+                l.setContent(rs.getString("content"));
+                l.setProfessorId(rs.getInt("professorId"));
+
+                list.add(l);
+
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return list;
+    }
+
+
+
+
+
 
 
 

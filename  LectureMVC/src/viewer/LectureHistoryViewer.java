@@ -42,7 +42,7 @@ public class LectureHistoryViewer {
     }
 
 
-    // 내가 수강한 강의만 보여주는 메소드
+    // 학생 본인이 수강하는 강의만 보여주는 메소드
     // *********************************별 로
     public void printUserLecture(UserDTO logIn) {
         LectureHistoryController lectureHistoryController = new LectureHistoryController(connector);
@@ -50,21 +50,50 @@ public class LectureHistoryViewer {
         UserController userController = new UserController(connector);
         for(int lectureId : lectureHistoryController.selectLecture(logIn.getId())) {
             LectureDTO l = lectureController.selectOne(lectureId);
-            System.out.printf(" %d. 강의명: %s \n [%s] \n 담당교수: %s \n", l.getId(), l.getClassname(), l.getContent(), userController.selectOne(l.getProfessorId()).getName());
+            System.out.printf(" %d. 강의명: %s \n [%s] \n 담당교수: %s \n",
+                    l.getId(), l.getClassname(), l.getContent(), userController.selectOne(l.getProfessorId()).getName());
         }
     }
 
-    // 성적 등록 메소드
-    public void insertGrade() {
-        LectureHistoryController lectureHistoryController = new LectureHistoryController(connector);
+    // 수강하는 학생만 보여주는 메소드
 
-        String message = "점수를 입력할 학생의 아이디를 입력해주세요.";
+
+    // 성적 등록 메소드
+    public void insertGrade(UserDTO logIn) {
+        LectureController lectureController = new LectureController(connector);
+        LectureHistoryController lectureHistoryController = new LectureHistoryController(connector);
+        UserController userController = new UserController(connector);
+        UserDTO u = new UserDTO();
+
+
+        // 우선 교수님별로 본인이 수업하는 강의 보여줌
+        for (LectureDTO l : lectureController.selectProLecture(logIn.getId())) {
+            System.out.printf(" %d. 강의명: %s \n", l.getId(), l.getClassname());
+        }
+
+        String message = "성적을 등록할 강의를 선택해주세요.";
         int id = ScannerUtil.nextInt(scanner, message);
 
-        message = "점수를 입력해주세요.";
+        lectureHistoryController.selectStudent(id);
 
+        for (int studentId : lectureHistoryController.selectStudent(id)) {
+            u = userController.selectOne(studentId);
+            System.out.printf(" %d. 수강중인 학생: %s \n", u.getId(), u.getName() );
+        }
+
+        for(int i = 0; i< lectureHistoryController.selectStudent(id).size(); i++) {
+            message = "점수를 입력할 학생의 번호를 입력해주세요.";
+            int stu = ScannerUtil.nextInt(scanner, message);
+
+            message = "학생의 점수를 입력해주세요.";
+            String grade = ScannerUtil.nextLine(scanner, message);
+
+            lectureHistoryController.insertGrade(stu, grade, id);
+        }
 
     }
+
+
 
 
 

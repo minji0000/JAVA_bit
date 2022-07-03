@@ -97,8 +97,8 @@ public class UserViewer {
                System.out.println("로그아웃 되었습니다.");
                logIn = null;
             } else if(userChoice == 3) {
-               //성적 입력 뷰어 연결
-
+               LectureHistoryViewer lectureHistoryViewer = new LectureHistoryViewer(scanner, connector);
+               lectureHistoryViewer.insertGrade(logIn);
             }
 
          } else if(logIn.getLevel() == 3) {
