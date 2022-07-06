@@ -51,17 +51,15 @@ public class StudentList extends HttpServlet{
 			out.println("<tr>");
 			out.println("<td>" + "<a href = '/student/selectOne.do?id=" + s.getId() +"'>" +  s.getId() + "</a>" + "</td>");
 			
-			String temp = "<td> <a href = '/student/selectOne.do?id =";
+			String temp = "<td> <a href = '/student/selectOne.do?id=";
 			
 			out.println("<td>" + s.getName() + "</td>");
-			out.println("<td>" + "수정" + "</td>");
-			out.println("<td>" + "삭제" + "</td>");
+			out.println("<td>" + "<a href = '/student/update.do?id="  + s.getId() +"'>" + "수정" + "</td>");
+			out.println("<td>" +"<a href = '/student/delete.do?id="  + s.getId() +"'>" + "삭제" + "</td>");
 			out.println("</tr>");
 		}
 		
 		out.println("</table>");
-		
-		
 		out.println("<h1>메에에에에</h1>");
 		out.println("</body>");
 		out.println("</HTML>");

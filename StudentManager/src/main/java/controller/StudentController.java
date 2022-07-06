@@ -38,7 +38,8 @@ public class StudentController {
 	}
 	
 	public void update(StudentDTO s) {
-		String query = "UPDATE `student` SET `name`= ?, `korean` = ?, `eglish` =?, `math` =?, `updatedDate` =? WHERE `id` = ?";
+		// NOW()로 바꿈 (내가) 
+		String query = "UPDATE `student` SET `name`= ?, `korean` = ?, `english` =?, `math` =?, `updatedDate` = NOW() WHERE `id` = ?";
 		
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(query);
