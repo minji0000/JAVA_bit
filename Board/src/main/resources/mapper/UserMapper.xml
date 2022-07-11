@@ -7,4 +7,18 @@
 		SELECT * FROM user
 	</select>
 	
+	<select id = "auth" resultType = "UserDTO" parameterType = "com.bitcamp.Board.model.UserDTO">
+		SELECT * FROM user WHERE username = #{username}
+		AND password = #{password}
+	</select>
+	
+	<insert id="register" parameterType = "com.bitcamp.Board.model.UserDTO">
+		INSERT INTO user(username, password, nickname)
+		VALUES(#{username},#{password},#{nickname})
+	</insert>
+	
+	<select id = "selectOne" parameterType = "int" resultType = "UserDTO">
+		SELECT * FROM user
+		WHERE id = #{id}
+	</select>
 </mapper>

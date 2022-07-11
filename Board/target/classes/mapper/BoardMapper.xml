@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.BoardMapper">
+	<select id="selectAll" resultType= "BoardDTO" parameterType = "hashMap" >
+		SELECT * FROM board
+		LIMIT #{startNum}, #{PAGE_SIZE}
+	</select>
+
+	<select id = "selectOne" resultType = "BoardDTO" parameterType = "int">
+		SELECT   * FROM board WHERE id = #{id}
+	</select>
+	
+	<insert id = "insert" parameterType= "BoardDTO">
+		INSERT INTO board(writerId, title, content)
+		VALUES(#{writerId}, #{title}, #{content})
+	</insert>
+
+	<select id = "count" resultType = "int">
+		SELECT COUNT(*) FROM board
+	</select>
+
+</mapper>
+
