@@ -12,13 +12,22 @@
 	</select>
 	
 	<insert id = "insert" parameterType= "BoardDTO">
-		INSERT INTO board(writerId, title, content)
-		VALUES(#{writerId}, #{title}, #{content})
+		INSERT INTO board(writerId, title, content, writtenDate, updatedDate)
+		VALUES(#{writerId}, #{title}, #{content}, NOW(), NOW())
 	</insert>
 
 	<select id = "count" resultType = "int">
 		SELECT COUNT(*) FROM board
 	</select>
+
+	<update id="update" parameterType= "BoardDTO">
+		UPDATE board SET title = #{title}, content = #{content} , updatedDate = NOW()
+		WHERE id = #{id}
+	</update>
+
+	<delete id="delete" parameterType = "int">
+		DELETE FROM board WHERE id = #{id}
+	</delete>
 
 </mapper>
 

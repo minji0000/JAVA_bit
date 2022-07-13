@@ -27,6 +27,7 @@
 				</tr>
 			</thead>
 
+			
 			<c:forEach items="${list }" var="b">
 
 				<tr onclick= "location.href ='/board/selectOne/${b.id}'">
@@ -44,25 +45,31 @@
 			<div class = "col">
 
 				<div class="btn btn-primary" style="background-color: #FFC0CB; border-color: #FFC0CB;"
-					onclick="location.href ='/board/write.jsp'">글 작성하기</div>
-				</div>
+					onclick="location.href ='/board/write'">글 작성하기</div>
 			</div>
+		</div>
+		
+		
 		<div class="row">
 			<div class="col">
 				<a href='/board/showAll/1'> [<<] </a>
+				
 				<c:choose>
+					
 					<c:when test="${currentPage < 3}">
 						<c:forEach begin="1" end="5" var="pageNo">
 							<c:choose>
 								<c:when test="${pageNo ne currentPage }">
 									<a href="/board/showAll/${pageNo }">${pageNo }</a>
 								</c:when>
+							
 								<c:otherwise>
 									<b> ${pageNo }</b>
 								</c:otherwise>
 							</c:choose>
 						</c:forEach>
 					</c:when>
+					
 					<c:when
 						test="${currentPage >= 3 and currentPage < lastPageNo - 2 }">
 						<c:forEach begin="${currentPage - 2}" end="${currentPage + 2 }"
@@ -77,6 +84,7 @@
 							</c:choose>
 						</c:forEach>
 					</c:when>
+					
 					<c:otherwise>
 						<c:forEach begin="${lastPageNo - 4}" end="${lastPageNo}"
 							var="pageNo">

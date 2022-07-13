@@ -36,16 +36,32 @@
 	<!--  == eq, ne != 같은 -->
 	<c:if test= "${b.writerId eq logInId }">
 	
-	<a href="/board/update.jsp?id=${b.id }"> 수정하기 </a>	
-	<a href="/board/delete.jsp?id=${b.id }  "> 삭제하기 </a>			
+	<a href="/board/update/${b.id}"> 수정하기 </a>
+	<a href="/board/delete/${b.id}"> 삭제하기 </a>
 
 	</c:if>
-	
-	
-	<br />
-	<a href="/board/showAll"> 목록으로 </a>	
 
-		
+	<br />
+	<a href="/board/showAll"> 목록으로 </a>
+	<a href="/reply.showAll"> 댓글작성 </a>
+
+	<div class = "reply">
+		<c:forEach items= >
+		<table>
+			<tr>
+				<td>작성자 이름</td>
+				<td>댓글</td>
+				<td>작성일</td>
+				<td>수정일</td>
+			</tr>
+		</table>
+	</div>
+
+	<form method= "post" action="/reply/write/${b.id}">
+		<input type="text" name = "content">
+		<button type="submit" > 댓글 작성 </button>
+	</form>
+
 
 </body>
 </html>

@@ -14,10 +14,10 @@
 	
 	<insert id="register" parameterType = "com.bitcamp.Board.model.UserDTO">
 		INSERT INTO user(username, password, nickname)
-		VALUES(#{username},#{password},#{nickname})
+		VALUES(#{username}, #{password}, #{nickname})
 	</insert>
 	
-	<select id = "selectOne" parameterType = "int" resultType = "UserDTO">
+	<select id = "selectOne" parameterType = "int" resultType = "com.bitcamp.Board.model.UserDTO">
 		SELECT * FROM user
 		WHERE id = #{id}
 	</select>
