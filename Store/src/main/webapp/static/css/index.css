@@ -1,0 +1,171 @@
+.banner {
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+#banner1 {
+    height: 100px;
+    width : 100%;
+}
+
+#logo{
+    display: flex;
+    padding-left: 2%;
+    width: 10%;
+}
+
+.person-fill {
+    width: 30px;
+    height: 16px;
+    float: right;
+}
+
+#wish {
+    margin-right: 2%;
+    width: 8%;
+}
+
+#logIn {
+    margin-right: 2%;
+    paddig: 5% 0 5% 0;
+    width: 8%;
+    float: right;
+}
+
+.search_mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+#search {
+    width: 55%;
+    height: 15%;
+    border: 5px solid #bbb;
+    border-radius: 8px;
+    padding: 1% 2%;
+    font-size: 14px;
+    border-color: lightpink;
+}
+
+#search_icon {
+    position : absolute;
+    width: 3%;
+    right: 22%;
+    margin: 0;
+}
+
+.main_header {
+    display: grid;
+    height: 80%;
+    grid-template: 'main_category main_category ' 1fr
+                    'category_all main_container ' 16fr / 2fr 10fr ;
+
+    background-color: yellow;
+}
+
+#menu2 {
+    grid-area: category_all;
+    background-color: greenyellow;
+
+}
+.main_category {
+    display: grid;
+    height: 10%;
+    grid-area: main_category;
+}
+
+.main_container{
+    grid-area: main_container;
+    background-color: coral;
+}
+
+#category_btn {
+    width: 25%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+#menu_btn {
+    background-color: lightpink;
+}
+
+.category_link {
+    font-size : 26px;
+    margin-left: 3%;
+}
+
+ <!-- 세로형 카테고리 -->
+#menu2 {
+    border-left: 10px solid black;
+}
+
+#menu2 a {
+    display: block;
+    color: #fff;
+}
+
+.M01 {
+    margin-left: 20px;
+    width: 100px;
+    background: #000;
+}
+
+.M01>li, .M02>li, .M03>li {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    text-align: center;
+    line-height: 50px;
+}
+
+.M01>li:hover .M02 {
+    left: 100px;
+}
+
+.M01>li a:hover {
+    display: block;
+    background: #AB06AD;
+}
+
+.M02, .M03 {
+    width: 100px;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.M02>li:hover .M03 {
+    left: 100px;
+}
+
+.M02>li a:hover {
+    display: block;
+    background: red;
+}
+
+.M03>li a:hover {
+    display: block;
+    background: blue;
+}
+
+<!-- 세로형 카테고리 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+

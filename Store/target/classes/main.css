@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Raleway&family=Roboto:wght@100&display=swap');
+
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    padding: 3px;
+}
+
+
+#banner1 {
+    height: 100px;
+    width : 100%;
+}
+
+#logo{
+    width: 10%;
+}
+
+.person-fill {
+    width: 16px;
+    height: 16px;
+}
+
