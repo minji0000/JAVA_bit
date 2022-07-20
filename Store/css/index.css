@@ -1,0 +1,222 @@
+.banner {
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+#banner1 {
+    height: 100px;
+    width : 100%;
+}
+
+#logo{
+    display: flex;
+    padding-left: 2%;
+    width: 10%;
+}
+
+.person-fill {
+    width: 30px;
+    height: 16px;
+    float: right;
+}
+
+#wish {
+    margin-right: 2%;
+    width: 8%;
+}
+
+#logIn {
+    margin-right: 2%;
+    paddig: 5% 0 5% 0;
+    width: 8%;
+    float: right;
+}
+
+.search_mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+#search {
+    width: 55%;
+    height: 15%;
+    border: 5px solid #bbb;
+    border-radius: 8px;
+    padding: 1% 2%;
+    font-size: 14px;
+    border-color: lightpink;
+}
+
+#search_icon {
+    position : absolute;
+    width: 3%;
+    right: 22%;
+    margin: 0;
+}
+
+/* 그리드 사용 */
+.main_header {
+    display: grid;
+    grid-template: 'category_btn menu_btn ' 1fr
+                    'menu main_container ' 6fr / 1fr 5fr ;
+
+    width: 95%;
+    margin: auto;
+}
+
+#menu2 {
+    grid-area: menu;
+    background-color: black;
+
+}
+
+
+.main_container{
+    grid-area: main_container;
+}
+
+#category_btn {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    grid-area: category_btn;
+    background-color: whitesmoke;
+}
+
+#menu_btn {
+    display: flex;
+    align-items: center;
+    grid-area: menu_btn;
+    background-color: lightpink;
+}
+
+.category_link {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+
+ <!-- 세로형 카테고리 -->
+#menu2 {
+    border-left: 10px solid black;
+}
+
+#menu2 a {
+    display: block;
+    color: #fff;
+}
+
+.M01 {
+    margin-left: 20px;
+    width: 100px;
+    background: #000;
+
+}
+
+.M01>li, .M02>li, .M03>li {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: #000;
+    text-align: center;
+    line-height: 50px;
+}
+
+.M01>li:hover .M02 {
+    left: 100px;
+}
+
+.M01>li a:hover {
+    display: block;
+    background: #AB06AD;
+}
+
+.M02, .M03 {
+    width: 120px;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.M02>li:hover .M03 {
+    left: 100px;
+}
+
+.M02>li a:hover {
+    display: block;
+    background: red;
+}
+
+.M03>li a:hover {
+    display: block;
+    background: blue;
+}
+
+<!-- 세로형 카테고리 -->
+
+
+/* 이미지 슬라이더 */
+.main_container {
+    /*     height:700px; */
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item {
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+    font-size: 35px;
+    text-align: center;
+}
+
+.item:nth-child(2) {
+    background-color: green;
+}
+
+.item:nth-child(3) {
+    background-color: blue;
+}
+
+.container ul {
+    -webkit-transition: all 0.25s cubic-bezier(1, .01, .32, 1);
+    -o-transition: all 0.25s cubic-bezier(1, .01, .32, 1);
+    transition: all 0.25s cubic-bezier(1, .01, .32, 1);
+}
+
+
+/* 위에까지 이미지 슬라이더 코드*/
+
+
+
+
+
+
+
+
+
+
+

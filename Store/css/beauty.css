@@ -1,0 +1,64 @@
+.beauty_banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.beauty_product {
+    display: grid;
+    grid-template:
+            'b1 b2 b3' 1fr
+            'b4 b5 b6' 1fr
+            'b7 b8 b9' 1fr / 1fr 1fr 1fr;
+
+    width: 80%;
+
+    margin: auto;
+
+}
+
+.space {
+    height: 350px;
+    color: white;
+
+}
+
+#b1 {
+    grid-area: b1;
+    background-color: red;
+}
+
+#b2 {
+    grid-area: b2;
+    background-color: coral;
+}
+#b3 {
+    grid-area: b3;
+    background-color: yellow;
+}
+#b4 {
+    grid-area: b4;
+    background-color: yellowgreen;
+}
+#b5 {
+    grid-area: b5;
+    background-color: green;
+}
+#b6 {
+    grid-area: b6;
+    background-color: skyblue;
+}
+#b7 {
+    grid-area: b7;
+    background-color: blue;
+}
+#b8 {
+    grid-area: b8;
+    background-color: darkblue;
+}
+#b9 {
+    grid-area: b9;
+    background-color: blueviolet;
+}
+

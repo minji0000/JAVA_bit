@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.ProductMapper">
+    <insert id="register" parameterType="com.kari.store.model.ProductDTO">
+        INSERT INTO product(sellerId, name, kind, price, content, regdate)
+        VALUES (#{sellerId}, #{name}, #{kind}, #{price}, #{content}, NOW())
+    </insert>
+
+    <insert id="register2" parameterType="com.kari.store.model.ProductDTO">
+        INSERT INTO product(sellerId, name, kind, price, content, image, regdate)
+        VALUES (#{sellerId}, #{name}, #{kind}, #{price}, #{content}, #{imageFileName}, NOW())
+    </insert>
+
+    <select id = "selectAll" resultType="ProductDTO">
+        SELECT * FROM product WHERE kind = #{1}
+    </select>
+
+    <select id = "selectOne" resultType="ProductDTO" parameterType="int">
+        SELECT * FROM product WHERE id = #{id}
+    </select>
+
+</mapper>

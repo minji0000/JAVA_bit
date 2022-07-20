@@ -1,0 +1,29 @@
+button {
+    border-radius: 10px;
+    width : 300px;
+    height : 35px;
+}
+
+input {
+    border-color: lightpink;
+    border-radius: 10px;
+    width : 300px;
+    height : 35px;
+    font-size : 15px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: white;
+    box-shadow: 0 0 10px lightpink;
+}
+
+.btn1{
+    border-color: #FF69B4;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
