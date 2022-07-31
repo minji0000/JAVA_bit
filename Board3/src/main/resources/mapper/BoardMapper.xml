@@ -7,13 +7,6 @@
                           LIMIT #{startNum}, #{PAGE_SIZE}
     </select>
 
-    <select id="emptyCheck" resultType= "Integer" parameterType = "hashMap" >
-        SELECT count(*) FROM board
-                          LIMIT #{startNum}, #{PAGE_SIZE}
-
-
-    </select>
-
     <select id = "selectOne" resultType = "com.kari.Board3.model.BoardDTO" parameterType = "int">
         SELECT * FROM board WHERE id = #{id}
     </select>
